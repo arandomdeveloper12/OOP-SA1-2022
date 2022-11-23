@@ -18,7 +18,7 @@ namespace DemoUnitTest
 
 		TEST_METHOD(SubtractTest)
 		{
-			Assert::AreEqual(5 - 9.5, grader.subtract(5, 9.5), 0.001, L"Add method did not total the two values correctly.");
+			Assert::AreEqual(5 - 9.5, grader.subtract(5, 9.5), 0.001, L"Sub method did not subtract the two values correctly.");
 		}
 	};
 }
