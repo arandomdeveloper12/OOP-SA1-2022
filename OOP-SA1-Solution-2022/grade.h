@@ -52,6 +52,15 @@ public:
 };
 
 // Class Implementation
+long double Grade::sum(const std::vector<double>& data) {
+	//if (std::vector<double>::empty) throw std::invalid_argument("The vector is empty!");
+	return 0;
+}
+
+long double Grade::sum(const std::vector<int>& data) {
+	//if (std::vector<double>::empty) throw std::invalid_argument("The vector is empty!");
+	return 0;
+}
 // Implementation of the Sum class (long double)
 long double Grade::sum(const std::vector<double>& data) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
@@ -62,6 +71,37 @@ long double Grade::sum(const std::vector<double>& data) {
 		}
 		return sum_values;
 	}
+	return 0;
+}
+
+double Grade::mean(const std::vector<double>& data) {
+	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	else {
+		double mean_values = 0;
+		for (int mean_counter = 0; mean_counter < data.size(); mean_counter++) {
+			mean_values += data[mean_counter];
+		}
+		mean_values = mean_values / data.size();
+		return mean_values;
+	}
+	return 0;
+}
+
+double Grade::mean(const std::vector<int>& data) {
+	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	else {
+		double mean_values = 0;
+		for (int mean_counter = 0; mean_counter < data.size(); mean_counter++) {
+			mean_values += data[mean_counter];
+		}
+		mean_values = mean_values /data.size();
+		return mean_values;
+	}
+	return 0;
+}
+
+double Grade::populationVariance(const std::vector<double>& data, double mean) {
+	//if (std::vector<double>::empty) throw std::invalid_argument("The vector is empty!");
 	return 0;
 }
 
