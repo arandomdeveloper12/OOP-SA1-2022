@@ -52,13 +52,29 @@ public:
 };
 
 // Class Implementation
+// Implementation of the Sum class (long double)
 long double Grade::sum(const std::vector<double>& data) {
-	//if (std::vector<double>::empty) throw std::invalid_argument("The vector is empty!");
+	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	else {
+		long double sum_values = 0;
+		for (int sum_counter = 0; sum_counter < data.size(); sum_counter++) {
+			sum_values += data[sum_counter];
+		}
+		return sum_values;
+	}
 	return 0;
 }
 
+// Implementation of the Sum class (int)
 long double Grade::sum(const std::vector<int>& data) {
-	//if (std::vector<double>::empty) throw std::invalid_argument("The vector is empty!");
+	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	else {
+		long double sum_values = 0;
+		for (int sum_counter = 0; sum_counter < data.size(); sum_counter++) {
+			sum_values += data[sum_counter];
+		}
+		return sum_values;
+	}
 	return 0;
 }
 
