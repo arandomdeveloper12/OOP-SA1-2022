@@ -25,11 +25,6 @@ protected:
 
 public:
 
-	// Sample 
-	double add(double dataItem1, double dataItem2);
-	double subtract(double dataItem1, double dataItem2);
-
-
 	// 3rd Methods
 	// Methods for the sum
 	long double sum(const std::vector<double>&);
@@ -122,14 +117,40 @@ double Grade::populationVariance(const std::vector<double>& data, double mean) {
 	return 0;
 }
 
-// Sample code passed test
-double Grade::add(double dataItem1, double dataItem2) {
-	return dataItem1 + dataItem2;
-}
+// Commit details below
+// ----------------------------------------------------------
 
-// Sample code failed test (error in the code)
-double Grade::subtract(double dataItem1, double dataItem2) {
-	// Uncomment the line below to fix the failed test
-	return dataItem1 - dataItem2;
-	// return dataItem1 - dataItem1;
-}
+/* 
+Commit d504b1e448d488582960b0f3ea4e899a65cca512
+Author: Callum Dyson <313906@student.lincolncollege.ac.uk>
+Date : 14 December 2022 10 : 57
+Parent : 880fa797
+Creating and implementing the method signatures and implementing them
+
+Commit 9b139f7992f00577191a52671a943942c3d435b8
+Author : Callum Dyson <313906@student.lincolncollege.ac.uk>
+Authored Date : 28 December 2022 19 : 04
+Committer : Callum Dyson <313906@student.lincolncollege.ac.uk>
+Commit Date : 28 December 2022 19 : 39
+Parent : d504b1e4
+Creating and implementing both classes(long doubleand int) for the sum
+
+Commit f9759d19c7c70a6d4236f685faac62356ba4d875
+Author : Callum Dyson <313906@student.lincolncollege.ac.uk>
+Date : 28 December 2022 20 : 22
+Parents : 9b139f79, 4224cc94
+Sum and mean branches has been merged into the 3rd branch
+
+Commit 3a571ba8e83a206b9a9c980f550865da8a5787e0
+Author: Callum Dyson <313906@student.lincolncollege.ac.uk>
+Date: 28 December 2022 20:27
+Parent: f9759d19
+Fixed merge issue with other branches so duplicate code has been removed
+
+Commit 6b120331956b1b2113bffed376c6ae97245de0c6
+Author: Callum Dyson <313906@student.lincolncollege.ac.uk>
+Date: 29 December 2022 18:42
+Parents: 3a571ba8, a71ac36d
+Fixed merge problem between the 3rd branch and population branch
+
+*/
