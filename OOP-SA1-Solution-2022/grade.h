@@ -50,6 +50,7 @@ public:
 // Implementation of the Sum class (long double)
 long double Grade::sum(const std::vector<double>& data) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	// If the vector is not empty, do the following code
 	else {
 		long double sum_values = 0;
 		for (int sum_counter = 0; sum_counter < data.size(); sum_counter++) {
@@ -63,6 +64,7 @@ long double Grade::sum(const std::vector<double>& data) {
 // Implementation of the Sum class (int)
 long double Grade::sum(const std::vector<int>& data) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	// If the vector is not empty, do the following code
 	else {
 		long double sum_values = 0;
 		for (int sum_counter = 0; sum_counter < data.size(); sum_counter++) {
@@ -76,6 +78,7 @@ long double Grade::sum(const std::vector<int>& data) {
 // Implementation of the mean class (double)
 double Grade::mean(const std::vector<double>& data) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	// If the vector is not empty, do the following code
 	else {
 		double mean_values = 0;
 		for (int mean_counter = 0; mean_counter < data.size(); mean_counter++) {
@@ -90,6 +93,7 @@ double Grade::mean(const std::vector<double>& data) {
 // Implementation of the mean class (int)
 double Grade::mean(const std::vector<int>& data) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	// If the vector is not empty, do the following code
 	else {
 		double mean_values = 0;
 		for (int mean_counter = 0; mean_counter < data.size(); mean_counter++) {
@@ -104,6 +108,7 @@ double Grade::mean(const std::vector<int>& data) {
 // Implemetation of the population variance method
 double Grade::populationVariance(const std::vector<double>& data, double mean) {
 	if (data.empty()) { throw std::invalid_argument("The vector is empty!"); }
+	// If the vector is not empty, do the following code
 	else {
 		double population_variance_value = 0;
 		double mean_data = Grade::mean(data);
